@@ -9,16 +9,17 @@
   },
   "devDependencies": {
     "axios": "^0.15.3",
+    "babel-preset-react": "^6.23.0",
     "bootstrap-sass": "^3.3.7",
     "cross-env": "^3.2.3",
     "jquery": "^3.1.1",
     "laravel-mix": "^0.8.3",
     "lodash": "^4.17.4",
-    "vue": "^2.1.10",
     "react": "^15.4.1",
     "react-autobind": "^1.0.6",
     "react-dom": "^15.4.1",
     "react-router": "^3.0.0",
-    "react-widgets": "^3.4.5"
+    "react-widgets": "^3.4.5",
+    "vue": "^2.1.10"
   }
 }
