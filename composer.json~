@@ -13,8 +13,7 @@
         "barryvdh/laravel-ide-helper": "^2.2",
         "sendgrid/sendgrid": "^5.1",
         "guzzlehttp/guzzle": "^6.2",
-        "squizlabs/php_codesniffer": "*",
-        "ext-gd": "*"
+        "squizlabs/php_codesniffer": "*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
