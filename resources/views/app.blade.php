@@ -23,7 +23,7 @@
 <body>
     <div id="app">
     </div>
-
+    abc
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
