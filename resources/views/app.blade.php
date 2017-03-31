@@ -21,10 +21,8 @@
     </script>
 </head>
 <body>
-    <div id="app">
-    </div>
-    abc
+    <div id="app"></div>
     <!-- Scripts -->
-    <script src="{{ mix('js/app.js') }}"></script>
+    <script src="{{ mix('js/iot.js') }}"></script>
 </body>
 </html>

@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import School from './components/school-component';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class App extends React.Component {
     constructor(props){
@@ -9,11 +8,17 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
-                <School />
-            </div>
+            <MuiThemeProvider>
+                <div className="container">
+                    <div className="pagegradient"></div>
+                    <div className="header">
+                        <h1 className="text-3d">Header</h1>
+                    </div>
+                    {this.props.children}
+                </div>
+            </MuiThemeProvider>
         );
     }
 }
 
-ReactDOM.render(<App/>, document.getElementById('app'));
+export default App;

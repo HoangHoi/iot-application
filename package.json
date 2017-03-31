@@ -23,6 +23,8 @@
     "vue": "^2.1.10"
   },
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "material-ui": "^0.17.1",
+    "react-tap-event-plugin": "^2.0.1"
   }
 }
