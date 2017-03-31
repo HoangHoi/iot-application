@@ -53,6 +53,11 @@ body {
 .button .press span {
     background-color: #E8E8E8;
 
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+
     background-image:
         /* gloss gradient */
         -webkit-gradient(
@@ -107,11 +112,11 @@ body {
     display: inline-block;
     padding: 10px 40px 10px 40px;
 
-    color: #3A474D;
+    color: darkorange;
     text-transform: uppercase;
     font-family: 'TradeGothicLTStd-BdCn20','PT Sans Narrow';
     font-weight: 700;
-    font-size: 32px;
+    font-size: 20px;
 
     text-shadow: 0px 1px #fff, 0px -1px #262F33;
 }

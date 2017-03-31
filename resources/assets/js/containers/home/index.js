@@ -24,17 +24,17 @@ class Home extends React.Component {
                     <div className="menu">
                         <div className="button">
                             <a className="press">
-                                <span>press me</span>
+                                <span>Đo nhiệt độ</span>
                             </a>
                         </div>
                         <div className="button">
                             <a className="press">
-                                <span>press me</span>
+                                <span>Đo nhịp tim</span>
                             </a>
                         </div>
                         <div className="button">
                             <a className="press">
-                                <span>press me</span>
+                                <span>Đo cái khác</span>
                             </a>
                         </div>
                     </div>
