@@ -1,6 +1,7 @@
 import React from 'react';
 import autobind from 'react-autobind';
 import Student from './student-component';
+import Mention from './mention';
 
 let name = 0;
 
@@ -18,13 +19,11 @@ class SchoolComponent extends React.Component {
             ],
             numClick: 0
         };
-        setInterval(() => { name++; console.log(name) }, 1000);
     }
 
     handleClick(){
         let numClick = this.state.numClick;
         console.log(name);
-        // name++;
         this.setState({numClick});
     }
 
@@ -40,7 +39,7 @@ class SchoolComponent extends React.Component {
         return (
             <ul>
                 <li key="otherKey">
-                    <span onClick={this.handleClick.bind(this)}>Click click</span>
+                    <Mention />
                 </li>
                 {
                     students.map((student) => {
