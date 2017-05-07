@@ -15,6 +15,7 @@
         "guzzlehttp/guzzle": "^6.2",
         "squizlabs/php_codesniffer": "*",
         "ext-gd": "*",
+        "fzaninotto/faker": "~1.4@dev",
         "elasticquent/elasticquent": "dev-master"
     },
     "require-dev": {
