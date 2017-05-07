@@ -14,7 +14,8 @@
         "sendgrid/sendgrid": "^5.1",
         "guzzlehttp/guzzle": "^6.2",
         "squizlabs/php_codesniffer": "*",
-        "ext-gd": "*"
+        "ext-gd": "*",
+        "elasticquent/elasticquent": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
