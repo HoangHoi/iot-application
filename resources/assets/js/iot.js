@@ -8,6 +8,15 @@ injectTapEventPlugin();
 
 import App from './app';
 import Home from './containers/home/index';
+import Io from 'socket.io-client';
+import Echo from 'laravel-echo';
+
+window.io = Io;
+window.echo = new Echo({
+    namespace: 'App.Events.Broadcast',
+    broadcaster: 'socket.io',
+    host: 'http://iot-application.herokuapp.com:9090'
+});
 
 $.ajaxSetup({
     headers: {

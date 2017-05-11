@@ -18,3 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/event/{data}', function($data) {
+    event(new App\Events\Broadcast\Notification($data));
+});

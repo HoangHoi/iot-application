@@ -15,6 +15,23 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 class Home extends React.Component {
     constructor(props){
         super(props);
+
+        this.state = {
+            data: '',
+        };
+    }
+
+    componentWillMount() {
+        echo.channel('user')
+            .listen('Notification', (event) => {
+                this.addNewMessage(event.data);
+            });
+    }
+
+    addNewMessage(data) {
+        data = data + ' ' +this.state.data;
+        console.log(data);
+        this.setState({data});
     }
 
     render() {
