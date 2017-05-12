@@ -44,7 +44,13 @@
         "deploy": [
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "php artisan key:generate",
-            "php artisan migrate"
+            "php artisan migrate",
+            "npm install",
+            "npm run production",
+            "npm install -g laravel-echo-server",
+            "npm install forever -g",
+            "laravel-echo-server client:add 0e1052d6edc3db2c",
+            "forever start server.js"
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
