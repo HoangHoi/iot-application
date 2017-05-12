@@ -2,7 +2,6 @@
 
 namespace App\Events\Broadcast;
 
-use App\Events\Event;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\PrivateChannel;
@@ -10,7 +9,7 @@ use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class Notification extends Event implements ShouldBroadcast
+class Notification implements ShouldBroadcast
 {
     use InteractsWithSockets, SerializesModels;
 
